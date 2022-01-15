@@ -6,3 +6,6 @@ This project allows the user to enter in a city, if the user enters anything els
 DOM manipulation was used for click events.
 
 This project demonstrates my understanding of Angular components and sharing directives.
+
+https://sandiegj.dev.fast.sheridanc.on.ca/syst24444_a3/
+
