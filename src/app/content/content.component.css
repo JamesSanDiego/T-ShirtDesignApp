@@ -1,0 +1,59 @@
+/* CSS for content html*/
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "InputArea OutputArea"
+  "ProfileArea";
+
+}
+
+#InputArea{
+  background-color: sandybrown;
+  grid-area: "InputArea";
+
+}
+
+#OutputArea{
+  text-align: center;
+  background-color: lightcoral;
+  grid-area: "OutputArea";
+
+}
+
+#ProfileArea{
+  background-color: turquoise;
+  text-align: center;
+  grid-area: "ProfileArea";
+  grid-column: 1/3;
+}
+
+#outputsection {
+  height: 50px;
+  width: 100px;
+  background-color: #555;
+}
+
+.equal{
+  background: radial-gradient(pink,green);
+
+}
+
+.notequal{
+  background: radial-gradient(turquoise,crimson);
+
+}
+
+#pFont{
+  font-weight: bold;
+}
+
+#pFont2{
+  font-weight: bold;
+}
+
+#profileAreaFont{
+  font-weight: bold;
+}

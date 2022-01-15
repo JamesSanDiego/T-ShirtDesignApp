@@ -1,0 +1,34 @@
+<div class="content">
+  <div id="InputArea">
+    <h5>Enter you T-Shirt Data</h5>
+    <label>
+      I live in <input [(ngModel)] = "mycity"> 
+    </label>
+
+    <h5>Choose your T-Shirt Size</h5>
+    <!--Buttons below contain different styles, and click events-->
+    <button id="smallBtn" [ngStyle]="{fontSize: '10px', color: 'blue', fontWeight: 'bold', marginRight: '5px'}" (click)="clickSmall()">S</button>
+    <button id="mediumBtn" [ngStyle]="{fontSize: '20px', color: 'blue', fontWeight: 'bold', marginRight: '5px'}" (click)="clickMedium()">M</button>
+    <button id="largeBtn"[ngStyle]="{fontSize: '30px', color: 'blue', fontWeight: 'bold'}" (click)="clickLarge()">L</button>
+
+  </div>
+
+  <div id="OutputArea">
+    <h4>Finished Design</h4>
+    <section id="outputsection">
+      <p id="pFont" *ngIf="(mycity | uppercase) === 'OAKVILLE'; else noCity"
+      [ngClass]="{equal: (mycity | uppercase) === 'OAKVILLE'}">I live in...<br><br> {{mycity}}</p>
+      <!--I tried to use (mycity) === '{{contentInfo.currentcity}}' but it didn't work?-->
+
+      <ng-template #noCity><p id="pFont2" [ngClass]="{notequal:(mycity | uppercase) != 'OAKVILLE'}">City Of ... <br><br> {{mycity}}</p></ng-template>
+
+    </section>
+    
+  </div>
+
+  <div id="ProfileArea">
+    <p id="profileAreaFont">Created by:</p>
+    <img src="{{contentInfo.pic}}" width="50px">
+    <!--Picture looks really small with 50px, but I will follow instructions and use 50px as the width-->
+  </div>
+</div>

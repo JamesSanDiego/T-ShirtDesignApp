@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*Adding Global Styles to Header and Footer lines below as stated in instructions */
+h3{
+  font-style: italic;
+  text-align: center;
+  background-color: crimson;
+  color: wheat;
+}
